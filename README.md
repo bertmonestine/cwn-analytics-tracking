@@ -55,6 +55,8 @@ A plain-English glossary of each metric is in [`docs/metrics-glossary.md`](docs/
 
 ## Case Study: Using Search Data to Guide Content
 
+![CWN performance dashboard, July 1 to October 11, 2026](images/dashboard_preview.png)
+
 ### 1. The Business Problem
 Crossing Waters Network (CWN) gets search traffic, but there was little visibility into what visitors were searching for or which channels led to action. Between July 1 and October 11, 2026, the directory of 13,745 listings produced 8 phone clicks, 26 directions clicks and 2 newsletter sign-ups. The challenge was to find which acquisition channels bring high-intent actions, and how to use search data to reach more of the visitors who were not acting.
 
