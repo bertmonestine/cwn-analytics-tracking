@@ -7,6 +7,7 @@ GA4 event tracking and a Data Studio performance dashboard for a nationwide ment
 - [Description](#description)
 - [Tracking Plan](#tracking-plan)
 - [Dashboard](#dashboard)
+- [Case Study](#case-study-using-search-data-to-guide-content)
 - [Skills](#skills)
 - [Technology](#technology)
 - [Results](#results)
@@ -51,6 +52,33 @@ Built in Data Studio on top of the GA4 data. It includes:
 It is formatted as a percentage. Event data and session data are combined with a blend that uses explicit join keys.
 
 A plain-English glossary of each metric is in [`docs/metrics-glossary.md`](docs/metrics-glossary.md).
+
+## Case Study: Using Search Data to Guide Content
+
+### 1. The Business Problem
+Crossing Waters Network (CWN) gets search traffic, but there was little visibility into what visitors were searching for or which channels led to action. Between July 1 and October 11, 2026, the directory of 13,745 listings produced 8 phone clicks, 26 directions clicks and 2 newsletter sign-ups. The challenge was to find which acquisition channels bring high-intent actions, and how to use search data to reach more of the visitors who were not acting.
+
+### 2. Steps Taken
+- **Event tracking:** Configured Google Analytics 4 (GA4) and Google Tag Manager to track four user actions: phone clicks, directions clicks, directory searches and newsletter sign-ups.
+- **Search data:** Linked Google Search Console to GA4 and connected it to the Looker Studio dashboard.
+- **Dashboard:** Built a Looker Studio dashboard showing traffic by acquisition channel, state and city, device, and search queries.
+- **Lead conversion metric:** Added a calculated field for lead conversion:
+
+```
+Lead Conversion Rate = (Phone Clicks + Directions Clicks) / Sessions
+```
+
+- **Check:** For Organic Search, the dashboard shows a 23.91% lead conversion rate, which matches the hand calculation of 33 actions across 138 sessions.
+
+### 3. What We Learned
+- **Organic Search drives action.** It accounted for all 26 directions clicks and 7 of the 8 phone clicks, even though Direct traffic had more sessions.
+- **Direct traffic is an open question.** Direct is the largest channel at 254 sessions but produced only 1 phone click. The cause has not been determined.
+- **There is search demand the site is not capturing.** The Search Queries table returned 7,388 rows. Many of the top queries have high impressions and zero clicks.
+
+### 4. Recommendations
+1. **Keep investing in organic search.** It is the channel that brings visitors who take action.
+2. **Use search data to guide content.** Group the high-impression, zero-click queries into themes, such as regional care or program types, and use those themes to guide the blog and newsletter content.
+3. **Future scope (not yet built):** A Python script that pulls high-impression queries from the Google Search Console API and passes the themes to the Claude content pipeline.
 
 ## Skills
 Web analytics, GA4 configuration, event tracking, Google Tag Manager, dashboard design, data blending, calculated fields, KPI definition, technical documentation.
