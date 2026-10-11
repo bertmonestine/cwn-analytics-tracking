@@ -34,7 +34,7 @@ Events are configured as custom tags in Google Tag Manager and sent to GA4.
 | Newsletter Sign-up | `newsletter_signup` | Email subscriber growth (once the signup form is live) |
 
 ## Dashboard
-![CWN performance dashboard](images/dashboard.png)
+![CWN performance dashboard, July 1 to October 11, 2026](images/dashboard_preview.png)
 
 Built in Data Studio on top of the GA4 data. It includes:
 - **Traffic overview:** sessions and users over time
@@ -54,8 +54,6 @@ It is formatted as a percentage. Event data and session data are combined with a
 A plain-English glossary of each metric is in [`docs/metrics-glossary.md`](docs/metrics-glossary.md).
 
 ## Case Study: Using Search Data to Guide Content
-
-![CWN performance dashboard, July 1 to October 11, 2026](images/dashboard_preview.png)
 
 ### 1. The Business Problem
 Crossing Waters Network (CWN) gets search traffic, but there was little visibility into what visitors were searching for or which channels led to action. Between July 1 and October 11, 2026, the directory of 13,745 listings produced 8 phone clicks, 26 directions clicks and 2 newsletter sign-ups. The challenge was to find which acquisition channels bring high-intent actions, and how to use search data to reach more of the visitors who were not acting.
