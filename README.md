@@ -60,8 +60,8 @@ Crossing Waters Network (CWN) gets search traffic, but there was little visibili
 
 ### 2. Steps Taken
 - **Event tracking:** Configured Google Analytics 4 (GA4) and Google Tag Manager to track four user actions: phone clicks, directions clicks, directory searches and newsletter sign-ups.
-- **Search data:** Linked Google Search Console to GA4 and connected it to the Looker Studio dashboard.
-- **Dashboard:** Built a Looker Studio dashboard showing traffic by acquisition channel, state and city, device, and search queries.
+- **Search data:** Linked Google Search Console to GA4 and connected it to the Data Studio dashboard.
+- **Dashboard:** Built a Data Studio dashboard showing traffic by acquisition channel, state and city, device, and search queries.
 - **Lead conversion metric:** Added a calculated field for lead conversion:
 
 ```
@@ -93,7 +93,7 @@ Google Analytics 4, Google Tag Manager, Data Studio.
 - The tracking covers a directory of 13,745 mental health treatment facility listings across all 50 states.
 
 ## Limitations
-Traffic to the site is still small: 418 sessions between August 3 and October 9, 2026. At this size, the percentages and rankings are directional only and should not be read as proven trends. The value of this project is the measurement method, which is ready to scale as traffic grows.
+Traffic to the site is still small: 427 sessions between July 1 and October 11, 2026. At this size, the percentages and rankings are directional only and should not be read as proven trends. The value of this project is the measurement method, which is ready to scale as traffic grows.
 
 ## Repository Structure
 ```
