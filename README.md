@@ -73,12 +73,13 @@ Lead Conversion Rate = (Phone Clicks + Directions Clicks) / Sessions
 ### 3. What We Learned
 - **Organic Search drives action.** It accounted for all 26 directions clicks and 7 of the 8 phone clicks, even though Direct traffic had more sessions.
 - **Direct traffic is an open question.** Direct is the largest channel at 254 sessions but produced only 1 phone click. The cause has not been determined.
-- **There is search demand the site is not capturing.** The Search Queries table returned 7,388 rows. Many of the top queries have high impressions and zero clicks.
+- **There is search demand the site is not capturing.** The Search Queries table returned 7,388 rows. Many of the top queries have high impressions and zero clicks. After filtering to queries with at least 50 impressions and 2 or fewer clicks, excluding branded searches, 25 remained. Of those, 18 were searches for specific facilities by name.
 
 ### 4. Recommendations
 1. **Keep investing in organic search.** It is the channel that brings visitors who take action.
-2. **Use search data to guide content.** Group the high-impression, zero-click queries into themes, such as regional care or program types, and use those themes to guide the blog and newsletter content.
-3. **Future scope (not yet built):** A Python script that pulls high-impression queries from the Google Search Console API and passes the themes to the Claude content pipeline.
+2. **Use search data to guide content.** Group the high-impression, low-click queries into themes and use those themes to guide the blog and newsletter content. The first run produced four themes: facility name searches, treatment types, location searches and family support.
+3. **Built: a Search Console theme script.** A Python script in the `cwn-content-automation` project pulls queries from the Google Search Console API with read-only access, filters for high-impression, low-click queries, groups them into themes with keyword rules, and writes a CSV of themes with query counts and impressions. It does not list facility names. On its first run it read 7,388 rows and produced 4 themes.
+4. **Future scope (not yet built):** Pass the themes to the content pipeline so they guide topic selection automatically.
 
 ## Skills
 Web analytics, GA4 configuration, event tracking, Google Tag Manager, dashboard design, data blending, calculated fields, KPI definition, technical documentation.
